@@ -4,7 +4,7 @@ RUN mkdir -p /opt/app
 
 WORKDIR /opt/app
 
-COPY package.json package-lock.json .
+COPY package.json package-lock.json /opt/app/
 
 RUN npm install
 
